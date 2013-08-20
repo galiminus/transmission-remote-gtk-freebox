@@ -34,7 +34,7 @@ const gchar *session_get_version_string(JsonObject * s)
 
 gdouble session_get_version(JsonObject * s)
 {
-    const gchar *versionString = session_get_version_string(s);
+    const gchar *versionString = "2.0";
     gchar *spaceChar = g_strrstr(" ", versionString);
     return g_ascii_strtod(versionString, &spaceChar);
 }
